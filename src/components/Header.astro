@@ -4,10 +4,10 @@ import favicon from "../assets/favicon.ico";
 ---
 
 <header>
-  <nav class="uk-navbar-container !bg-pink-950/80 !text-fuchsia-200/80" uk-navbar uk-sticky>
+  <nav class="uk-navbar-container !bg-pink-950/90 !text-fuchsia-200" uk-navbar uk-sticky>
     <div class="uk-container uk-flex uk-flex-between uk-flex-middle">
     <div class="uk-navbar-left">
-      <a class="uk-navbar-item uk-logo !text-fuchsia-200/80" href="/">
+      <a class="uk-navbar-item uk-logo !text-fuchsia-200" href="/">
         <Image
           src={favicon}
           alt="洪水のファンタジア ロゴ"
@@ -43,7 +43,8 @@ import favicon from "../assets/favicon.ico";
   </nav>
 
   <div id="offcanvas-nav" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar !bg-violet-950/60">
+        <div class="uk-offcanvas-bar !bg-linear-to-bl !from-violet-950/90 !to-pink-950/90">
+          <button class="uk-offcanvas-close" type="button" uk-close></button>
       <ul class="uk-nav uk-nav-default">
         <li><a href="/">トップページ</a></li>
         <li><a href="/timeline">年表</a></li>
