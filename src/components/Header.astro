@@ -7,7 +7,13 @@ import favicon from "../assets/favicon.svg";
   <nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
       <a class="uk-navbar-item uk-logo" href="/">
-        <Image src={favicon} alt="洪水のファンタジア ロゴ" width="30" height="30" class="uk-margin-small-right" />
+        <Image
+          src={favicon}
+          alt="洪水のファンタジア ロゴ"
+          width="30"
+          height="30"
+          class="uk-margin-small-right"
+        />
         洪水のファンタジア
       </a>
       <ul class="uk-navbar-nav uk-visible@m">
@@ -17,17 +23,27 @@ import favicon from "../assets/favicon.svg";
       </ul>
     </div>
     <div class="uk-navbar-right uk-hidden@m">
-      <a class="uk-navbar-toggle" href="#offcanvas-nav" uk-navbar-toggle uk-toggle></a>
+      <a
+        class="uk-navbar-toggle"
+        href="#offcanvas-nav"
+        uk-navbar-toggle
+        uk-toggle></a>
     </div>
   </nav>
 
   <div id="offcanvas-nav" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar">
       <ul class="uk-nav uk-nav-default">
-        <li class="uk-active"><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/src/pages/index.astro">トップページ</a> </li>
+        <li><a href="/src/pages/timeline.astro">年表</a></li>
+        <li><a href="/src/pages/characters.astro">キャラクター</a></li>
+        <li><a href="/src/pages/2042.astro">2042年</a></li>
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="/src/pages/countries-2042.astro">国家</a></li>
+            <li><a href="/src/pages/scenarios-2042.astro">シナリオ</a></li>
+        </ul>
       </ul>
     </div>
   </div>
 </header>
+xss-
