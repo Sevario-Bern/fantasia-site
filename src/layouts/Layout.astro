@@ -17,14 +17,16 @@ import '../styles/global.css';
 		<link rel="icon" href="/assets/favicon.svg" />
 	</head>
 	<body class="bg-[url('/src/assets/ファンタジア世界背景用_20260503223944.png')] bg-cover bg-center">
+		<div class="bg-gray-950/85 uk-height-viewport">
 		<Header />
-		<main class="uk-container uk-margin-top">
-			<div class="text-stone-200">
-				<h1 class="uk-heading-divider !text-fuchsia-50">{title}</h1>
-				<slot />
-			</div>
-			<p class="text-xs text-zinc-300">🄯 2026 洪水のファンタジア. SOURCE CODE: MIT CONTENT: CC BY-SA 4.0</p>
-		</main>
+			<main class="uk-container uk-margin-top">
+				<div class="text-stone-200">
+					<h1 class="uk-heading-divider !text-fuchsia-50">{title}</h1>
+					<slot />
+				</div>
+				<p class="text-xs text-zinc-300">🄯 2026 洪水のファンタジア. SOURCE CODE: MIT CONTENT: CC BY-SA 4.0</p>
+			</main>
+		</div>
 	</body>
 </html>
 
