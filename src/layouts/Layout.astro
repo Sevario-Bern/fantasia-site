@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 const { title } = Astro.props;
 import '../styles/global.css';
+import baseUrl = import.meta.env.BASE_URL;
 ---
 <!doctype html>
 <html lang="ja">
@@ -14,12 +15,12 @@ import '../styles/global.css';
 			import Icons from 'uikit/dist/js/uikit-icons';
 			UIkit.use(Icons);
 		</script>
-		<link rel="icon" href="/src/assets/favicon.ico" />
+		<link rel="icon" href="{baseUrl}/src/assets/favicon.ico" />
 	</head>
 	<body class="m-0 p-0">
 		<div class="fixed inset-0 -z-10 w-screen h-screen overflow-hidden">
 			<img
-    			src="/src/assets/ファンタジア世界背景用_20260503223944.png"
+    			src="{baseUrl}/src/assets/ファンタジア世界背景用_20260503223944.png"
     			class="absolute inset-0 min-h-full min-w-full object-cover object-center"
     			alt="Background"
 		 	/>
