@@ -16,7 +16,14 @@ import '../styles/global.css';
 		</script>
 		<link rel="icon" href="/src/assets/favicon.ico" />
 	</head>
-	<body class="bg-[url('/src/assets/ファンタジア世界背景用_20260503223944.png')] bg-cover bg-center bg-fixed">
+	<body class="m-0 p-0">
+		<div class="fixed inset-0 -z-10 w-screen h-screen overflow-hidden">
+			<img
+    			src="/src/assets/ファンタジア世界背景用_20260503223944.png"
+    			class="absolute inset-0 min-h-full min-w-full object-cover object-center"
+    			alt="Background"
+		 	/>
+		</div>
 		<div class="bg-gray-950/80 uk-height-viewport">
 		<Header />
 			<main class="uk-container uk-margin-top">
@@ -27,7 +34,7 @@ import '../styles/global.css';
 				<p class="text-xs text-zinc-300">🄯 2026 洪水のファンタジア. SOURCE CODE: MIT CONTENT: CC BY-SA 4.0</p>
 			</main>
 		</div>
-	</body>
+	</b>
 </html>
 
 <style>
