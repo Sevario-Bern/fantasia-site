@@ -1,14 +1,15 @@
 ---
 import { Image } from "astro:assets";
 import icon from "../assets/無題547_20260503173534.png";
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrlBase = import.meta.env.BASE_URL
+const baseUrl = baseUrlBase.endsWith('/') ? baseUrlBase.slice(0, -1) : baseUrlBase;
 ---
 
 <header>
   <nav class="uk-navbar-container !bg-pink-950/60" uk-navbar uk-sticky>
     <div class="uk-container uk-flex uk-flex-between uk-flex-middle">
     <div class="uk-navbar-left">
-      <a class="uk-navbar-item uk-logo !text-fuchsia-50" href="./">
+      <a class="uk-navbar-item uk-logo !text-fuchsia-50" href={`${baseUrl}/`}>
         <Image
           src={icon}
           alt="洪水のファンタジア ロゴ"
@@ -19,7 +20,7 @@ const baseUrl = import.meta.env.BASE_URL;
         洪水のファンタジア
       </a>
       <ul class="uk-navbar-nav uk-visible@m [&_a]:!text-fuchsia-50">
-        <li><a href={baseUrl}>トップページ</a></li>
+        <li><a href={`${baseUrl}/`}>トップページ</a></li>
         <li><a href={`${baseUrl}/timeline`}>年表</a></li>
         <li><a href={`${baseUrl}/characters`}>キャラクター</a></li>
         <li>
@@ -53,7 +54,7 @@ const baseUrl = import.meta.env.BASE_URL;
         <div class="uk-offcanvas-bar !bg-transparent !bg-linear-to-tr from-violet-950/85 to-pink-950/85">
           <button class="uk-offcanvas-close" type="button" uk-close></button>
       <ul class="uk-list uk-list-striped [&_a]:!text-fuchsia-50">
-        <li><a href={baseUrl}>トップページ</a></li>
+        <li><a href={`${baseUrl}/`}>トップページ</a></li>
         <li><a href={`${baseUrl}/timeline`}>年表</a></li>
         <li><a href={`${baseUrl}/characters`}>キャラクター</a></li>
         <li>
