@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 const { title } = Astro.props;
 import '../styles/global.css';
+import backgroundMap from "../assets/ファンタジア世界背景用_20260503223944.png";
 ---
 <!doctype html>
 <html lang="ja">
@@ -19,7 +20,7 @@ import '../styles/global.css';
 	<body class="m-0 p-0">
 		<div class="fixed inset-0 -z-10 w-screen h-screen overflow-hidden">
 			<img
-    			src="..	/assets/ファンタジア世界背景用_20260503223944.png"
+    			src={backgroundMap.src}
     			class="absolute inset-0 min-h-full min-w-full object-cover object-center"
     			alt="Background"
 		 	/>
